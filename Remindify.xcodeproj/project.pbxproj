@@ -8,17 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		70E58B512A02FB5F00EBF07D /* RemindifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B502A02FB5F00EBF07D /* RemindifyApp.swift */; };
-		70E58B532A02FB5F00EBF07D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B522A02FB5F00EBF07D /* ContentView.swift */; };
+		70E58B532A02FB5F00EBF07D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B522A02FB5F00EBF07D /* HomeView.swift */; };
 		70E58B552A02FB6100EBF07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E58B542A02FB6100EBF07D /* Assets.xcassets */; };
 		70E58B582A02FB6100EBF07D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E58B572A02FB6100EBF07D /* Preview Assets.xcassets */; };
+		70E58B602A02FC4800EBF07D /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B5F2A02FC4800EBF07D /* CoreDataProvider.swift */; };
+		70E58B662A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B642A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld */; };
+		70E58B692A02FD7800EBF07D /* MyList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B682A02FD7800EBF07D /* MyList+CoreDataClass.swift */; };
+		70E58B6B2A02FD8300EBF07D /* MyList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B6A2A02FD8300EBF07D /* MyList+CoreDataProperties.swift */; };
+		70E58B6E2A02FE7800EBF07D /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B6D2A02FE7800EBF07D /* AddNewListView.swift */; };
+		70E58B702A02FF6800EBF07D /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B6F2A02FF6800EBF07D /* ColorPickerView.swift */; };
+		70E58B732A03061300EBF07D /* RemindifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B722A03061300EBF07D /* RemindifyService.swift */; };
+		70E58B762A03078A00EBF07D /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B752A03078A00EBF07D /* UIColorTransformer.swift */; };
+		70E58B782A0311F500EBF07D /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B772A0311F500EBF07D /* MyListsView.swift */; };
+		70E58B7A2A0312EE00EBF07D /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B792A0312EE00EBF07D /* MyListCellView.swift */; };
+		70E58B7C2A03134C00EBF07D /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B7B2A03134C00EBF07D /* PreviewData.swift */; };
+		70E58B7E2A03180F00EBF07D /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B7D2A03180F00EBF07D /* MyListDetailView.swift */; };
+		70E58B802A04077000EBF07D /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B7F2A04077000EBF07D /* ReminderListView.swift */; };
+		70E58B822A040AA100EBF07D /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B812A040AA100EBF07D /* ReminderCellView.swift */; };
+		70E58B892A040DCA00EBF07D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B882A040DCA00EBF07D /* Date+Extensions.swift */; };
+		70E58B8B2A04122100EBF07D /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B8A2A04122100EBF07D /* ReminderDetailView.swift */; };
+		70E58B8E2A04156F00EBF07D /* ReminderEditConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B8D2A04156F00EBF07D /* ReminderEditConfig.swift */; };
+		70E58B912A0416F900EBF07D /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B902A0416F900EBF07D /* CustomOperators.swift */; };
+		70E58B932A041D4D00EBF07D /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B922A041D4D00EBF07D /* SelectListView.swift */; };
+		70E58B952A04325400EBF07D /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B942A04325400EBF07D /* Delay.swift */; };
+		70E58B972A046E6E00EBF07D /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B962A046E6E00EBF07D /* ReminderStatsBuilder.swift */; };
+		70E58B992A0473E400EBF07D /* ReminderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B982A0473E400EBF07D /* ReminderStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70E58B4D2A02FB5F00EBF07D /* Remindify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remindify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E58B502A02FB5F00EBF07D /* RemindifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindifyApp.swift; sourceTree = "<group>"; };
-		70E58B522A02FB5F00EBF07D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70E58B522A02FB5F00EBF07D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		70E58B542A02FB6100EBF07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E58B572A02FB6100EBF07D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70E58B5F2A02FC4800EBF07D /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		70E58B652A02FD1A00EBF07D /* RemindifyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindifyModel.xcdatamodel; sourceTree = "<group>"; };
+		70E58B682A02FD7800EBF07D /* MyList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		70E58B6A2A02FD8300EBF07D /* MyList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		70E58B6D2A02FE7800EBF07D /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
+		70E58B6F2A02FF6800EBF07D /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		70E58B722A03061300EBF07D /* RemindifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindifyService.swift; sourceTree = "<group>"; };
+		70E58B752A03078A00EBF07D /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
+		70E58B772A0311F500EBF07D /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
+		70E58B792A0312EE00EBF07D /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
+		70E58B7B2A03134C00EBF07D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		70E58B7D2A03180F00EBF07D /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
+		70E58B7F2A04077000EBF07D /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		70E58B812A040AA100EBF07D /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
+		70E58B882A040DCA00EBF07D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		70E58B8A2A04122100EBF07D /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
+		70E58B8D2A04156F00EBF07D /* ReminderEditConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditConfig.swift; sourceTree = "<group>"; };
+		70E58B902A0416F900EBF07D /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		70E58B922A041D4D00EBF07D /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
+		70E58B942A04325400EBF07D /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		70E58B962A046E6E00EBF07D /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
+		70E58B982A0473E400EBF07D /* ReminderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +95,17 @@
 		70E58B4F2A02FB5F00EBF07D /* Remindify */ = {
 			isa = PBXGroup;
 			children = (
+				70E58B8F2A0416CC00EBF07D /* Utils */,
+				70E58B872A040DB100EBF07D /* Extensions */,
+				70E58B742A03077500EBF07D /* Transformers */,
+				70E58B712A0305FF00EBF07D /* Services */,
+				70E58B6C2A02FE4100EBF07D /* Views */,
+				70E58B672A02FD5300EBF07D /* Models */,
+				70E58B5E2A02FBD800EBF07D /* Providers */,
 				70E58B502A02FB5F00EBF07D /* RemindifyApp.swift */,
-				70E58B522A02FB5F00EBF07D /* ContentView.swift */,
 				70E58B542A02FB6100EBF07D /* Assets.xcassets */,
 				70E58B562A02FB6100EBF07D /* Preview Content */,
+				70E58B642A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld */,
 			);
 			path = Remindify;
 			sourceTree = "<group>";
@@ -63,8 +114,87 @@
 			isa = PBXGroup;
 			children = (
 				70E58B572A02FB6100EBF07D /* Preview Assets.xcassets */,
+				70E58B7B2A03134C00EBF07D /* PreviewData.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70E58B5E2A02FBD800EBF07D /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B5F2A02FC4800EBF07D /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		70E58B672A02FD5300EBF07D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B8C2A04155C00EBF07D /* EditConfig */,
+				70E58B682A02FD7800EBF07D /* MyList+CoreDataClass.swift */,
+				70E58B6A2A02FD8300EBF07D /* MyList+CoreDataProperties.swift */,
+				70E58B962A046E6E00EBF07D /* ReminderStatsBuilder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70E58B6C2A02FE4100EBF07D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B522A02FB5F00EBF07D /* HomeView.swift */,
+				70E58B6D2A02FE7800EBF07D /* AddNewListView.swift */,
+				70E58B6F2A02FF6800EBF07D /* ColorPickerView.swift */,
+				70E58B772A0311F500EBF07D /* MyListsView.swift */,
+				70E58B792A0312EE00EBF07D /* MyListCellView.swift */,
+				70E58B7D2A03180F00EBF07D /* MyListDetailView.swift */,
+				70E58B7F2A04077000EBF07D /* ReminderListView.swift */,
+				70E58B812A040AA100EBF07D /* ReminderCellView.swift */,
+				70E58B8A2A04122100EBF07D /* ReminderDetailView.swift */,
+				70E58B922A041D4D00EBF07D /* SelectListView.swift */,
+				70E58B982A0473E400EBF07D /* ReminderStatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70E58B712A0305FF00EBF07D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B722A03061300EBF07D /* RemindifyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		70E58B742A03077500EBF07D /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B752A03078A00EBF07D /* UIColorTransformer.swift */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		70E58B872A040DB100EBF07D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B882A040DCA00EBF07D /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70E58B8C2A04155C00EBF07D /* EditConfig */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B8D2A04156F00EBF07D /* ReminderEditConfig.swift */,
+			);
+			path = EditConfig;
+			sourceTree = "<group>";
+		};
+		70E58B8F2A0416CC00EBF07D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				70E58B902A0416F900EBF07D /* CustomOperators.swift */,
+				70E58B942A04325400EBF07D /* Delay.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +267,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E58B532A02FB5F00EBF07D /* ContentView.swift in Sources */,
+				70E58B7A2A0312EE00EBF07D /* MyListCellView.swift in Sources */,
+				70E58B702A02FF6800EBF07D /* ColorPickerView.swift in Sources */,
+				70E58B822A040AA100EBF07D /* ReminderCellView.swift in Sources */,
+				70E58B532A02FB5F00EBF07D /* HomeView.swift in Sources */,
 				70E58B512A02FB5F00EBF07D /* RemindifyApp.swift in Sources */,
+				70E58B7C2A03134C00EBF07D /* PreviewData.swift in Sources */,
+				70E58B762A03078A00EBF07D /* UIColorTransformer.swift in Sources */,
+				70E58B8E2A04156F00EBF07D /* ReminderEditConfig.swift in Sources */,
+				70E58B782A0311F500EBF07D /* MyListsView.swift in Sources */,
+				70E58B892A040DCA00EBF07D /* Date+Extensions.swift in Sources */,
+				70E58B912A0416F900EBF07D /* CustomOperators.swift in Sources */,
+				70E58B952A04325400EBF07D /* Delay.swift in Sources */,
+				70E58B8B2A04122100EBF07D /* ReminderDetailView.swift in Sources */,
+				70E58B732A03061300EBF07D /* RemindifyService.swift in Sources */,
+				70E58B602A02FC4800EBF07D /* CoreDataProvider.swift in Sources */,
+				70E58B6B2A02FD8300EBF07D /* MyList+CoreDataProperties.swift in Sources */,
+				70E58B932A041D4D00EBF07D /* SelectListView.swift in Sources */,
+				70E58B972A046E6E00EBF07D /* ReminderStatsBuilder.swift in Sources */,
+				70E58B992A0473E400EBF07D /* ReminderStatsView.swift in Sources */,
+				70E58B6E2A02FE7800EBF07D /* AddNewListView.swift in Sources */,
+				70E58B692A02FD7800EBF07D /* MyList+CoreDataClass.swift in Sources */,
+				70E58B802A04077000EBF07D /* ReminderListView.swift in Sources */,
+				70E58B662A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld in Sources */,
+				70E58B7E2A03180F00EBF07D /* MyListDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +491,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70E58B642A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70E58B652A02FD1A00EBF07D /* RemindifyModel.xcdatamodel */,
+			);
+			currentVersion = 70E58B652A02FD1A00EBF07D /* RemindifyModel.xcdatamodel */;
+			path = RemindifyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 70E58B452A02FB5F00EBF07D /* Project object */;
 }
