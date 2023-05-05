@@ -55,6 +55,7 @@ struct ReminderListView: View {
                 }
                 .onDelete(perform: deleteReminder)
             }
+            .listStyle(.plain)
         }
         .sheet(isPresented: $showReminderDetail) {
             ReminderDetailView(reminder: Binding($selectedReminder)!, reminderEditConfig: ReminderEditConfig(reminder: selectedReminder!))

@@ -23,13 +23,14 @@ struct MyListDetailView: View {
     init(myList: MyList) {
         self.myList = myList
         _reminderResults = FetchRequest(fetchRequest: RemindifyService.getRemindersByList(myList: myList))
-        
     }
     
     var body: some View {
         VStack {
-            // display list of reminders
-            ReminderListView(reminders: reminderResults)
+            VStack {
+                // display list of reminders
+                ReminderListView(reminders: reminderResults)
+            }
             
             HStack {
                 Image(systemName: "plus.circle.fill")

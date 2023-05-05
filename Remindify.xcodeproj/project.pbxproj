@@ -33,6 +33,8 @@
 		70E58B952A04325400EBF07D /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B942A04325400EBF07D /* Delay.swift */; };
 		70E58B972A046E6E00EBF07D /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B962A046E6E00EBF07D /* ReminderStatsBuilder.swift */; };
 		70E58B992A0473E400EBF07D /* ReminderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58B982A0473E400EBF07D /* ReminderStatsView.swift */; };
+		70E58BF32A05599E00EBF07D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58BF22A05599E00EBF07D /* NotificationManager.swift */; };
+		70E58BF52A05619100EBF07D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E58BF42A05619100EBF07D /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		70E58B942A04325400EBF07D /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		70E58B962A046E6E00EBF07D /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
 		70E58B982A0473E400EBF07D /* ReminderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsView.swift; sourceTree = "<group>"; };
+		70E58BF22A05599E00EBF07D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		70E58BF42A05619100EBF07D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		70E58B4F2A02FB5F00EBF07D /* Remindify */ = {
 			isa = PBXGroup;
 			children = (
+				70E58BF12A05598600EBF07D /* Managers */,
 				70E58B8F2A0416CC00EBF07D /* Utils */,
 				70E58B872A040DB100EBF07D /* Extensions */,
 				70E58B742A03077500EBF07D /* Transformers */,
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				70E58B882A040DCA00EBF07D /* Date+Extensions.swift */,
+				70E58BF42A05619100EBF07D /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +201,14 @@
 				70E58B942A04325400EBF07D /* Delay.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		70E58BF12A05598600EBF07D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				70E58BF22A05599E00EBF07D /* NotificationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,7 @@
 				70E58B512A02FB5F00EBF07D /* RemindifyApp.swift in Sources */,
 				70E58B7C2A03134C00EBF07D /* PreviewData.swift in Sources */,
 				70E58B762A03078A00EBF07D /* UIColorTransformer.swift in Sources */,
+				70E58BF52A05619100EBF07D /* Color+Extensions.swift in Sources */,
 				70E58B8E2A04156F00EBF07D /* ReminderEditConfig.swift in Sources */,
 				70E58B782A0311F500EBF07D /* MyListsView.swift in Sources */,
 				70E58B892A040DCA00EBF07D /* Date+Extensions.swift in Sources */,
@@ -289,6 +304,7 @@
 				70E58B6E2A02FE7800EBF07D /* AddNewListView.swift in Sources */,
 				70E58B692A02FD7800EBF07D /* MyList+CoreDataClass.swift in Sources */,
 				70E58B802A04077000EBF07D /* ReminderListView.swift in Sources */,
+				70E58BF32A05599E00EBF07D /* NotificationManager.swift in Sources */,
 				70E58B662A02FD1A00EBF07D /* RemindifyModel.xcdatamodeld in Sources */,
 				70E58B7E2A03180F00EBF07D /* MyListDetailView.swift in Sources */,
 			);

@@ -32,7 +32,7 @@ class RemindifyService {
         try save()
     }
     
-    static func updateReminder(reminder: Reminder, reminderEditConfig: ReminderEditConfig) throws {
+    static func updateReminder(reminder: Reminder, reminderEditConfig: ReminderEditConfig) throws -> Bool {
         let reminderToUpdate = reminder
         reminderToUpdate.title = reminderEditConfig.title
         reminderToUpdate.notes = reminderEditConfig.notes
@@ -40,6 +40,7 @@ class RemindifyService {
         reminderToUpdate.reminderDate = reminderEditConfig.hasDate ? reminderEditConfig.reminderDate : nil
         reminderToUpdate.reminderTime = reminderEditConfig.hasTime ? reminderEditConfig.reminderTime : nil
         try save()
+        return true
     }
     
     static func deleteReminder(reminder: Reminder) throws {
